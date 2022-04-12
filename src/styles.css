@@ -16,14 +16,23 @@
 }
 .mega-menu {
   display: none;
+  top: 6rem;
+  position: fixed;
+  left: 0;
 }
 .feature-dropdown:hover .mega-menu {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+  z-index: 100;
 }
 .dropdown-lists li {
-  margin-top: 15px;
+  margin-top: 18px;
+  font-size: 18px;
+}
+.dropdown-lists li:hover {
+  color: #d9b44a;
+  cursor: pointer;
 }
 .para {
   text-align: right;
@@ -36,6 +45,56 @@
 }
 #check {
   display: none;
+}
+.portfolio-paragraph {
+  margin: 0 auto;
+}
+.show-item{
+  display: none;
+}
+.sm-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 130px;
+}
+.fa-telegram {
+  right: 20px;
+  top: 10px;
+}
+h6 {
+  color: #021c1e;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.footer div > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.newsletter p,
+.newsletter input{
+  width: 100%;
+}
+.footer {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.problem-statement2 div:nth-child(2) img{
+  width: 100%;
+}
+@media (min-width: 1001px) {
+  .portfolio-paragraph {
+    width: 550px;
+  }
+  .footer {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .newsletter p,
+  .newsletter input {
+    width: 350px;
+  }
 }
 @media (max-width: 1000px) {
   nav ul {
@@ -65,13 +124,36 @@
     transform: translateX(0);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 899px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-1 {
+    grid-column: span 2;
+  }
   .problem-statement1,
   .problem-statement2,
   .problem-statement3 {
     flex-direction: column-reverse;
   }
-  .btns{
-      display: none;
+}
+@media (min-width: 900px){
+  .description{
+     padding-top: 70px;
+  }
+  .problem-statements{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+  .description2{
+    padding-top: 200px;
+  }
+}
+@media (max-width: 700px) {
+  
+  .btns {
+    display: none;
   }
 }

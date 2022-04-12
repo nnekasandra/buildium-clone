@@ -12,6 +12,7 @@ module.exports = {
         rain: "#2C7873",
         greenery: "#6FB98F",
         "dim-white": "#ccc",
+        border: "#DBDBDC",
       },
     },
     screens: {

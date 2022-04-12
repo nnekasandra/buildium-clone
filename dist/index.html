@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/src/styles.css" />
     <title>Buildium</title>
   </head>
   <body>
@@ -22,19 +21,19 @@
           />
         </div>
         <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
+        <label for="check" class="checkbtn relative left-20 top-3">
           <i class="fa fa-bars"></i>
         </label>
         <nav class="flex">
           <ul class="flex gap-6 font-bold text-sm">
             <li
-              class="p-4 hover:bg-rain hover:text-sunglow feature-dropdown relative"
+              class="p-4 hover:pb-10 hover:bg-rain hover:text-sunglow feature-dropdown relative"
             >
               <a href="#">Features </a><i class="fa fa-angle-down"></i>
               <div
-                class="fixed left-0 top-20 bg-rain border-b-4 border-b-sunglow py-10 px-28 text-blue-black mega-menu"
+                class="bg-rain border-b-4 border-b-sunglow py-10 px-28 text-blue-black mega-menu"
               >
-                <div class="flex gap-10">
+                <div class="flex gap-20">
                   <div class="dropdown-menu">
                     <h5 class="dropdown-title text-sunglow">
                       <a href="#">Accounting</a>
@@ -157,11 +156,13 @@
               </ul>
             </li>
             <li
-              class="p-4 hover:border-b-4 hover:border-b-sunglow hover:text-sunglow"
+              class="p-4 md:hover:border-b-4 md:hover:border-b-sunglow hover:text-sunglow"
             >
               <a href="#">Pricing</a>
             </li>
-            <li class="p-4 hover:bg-rain hover:text-sunglow drop-down relative">
+            <li
+              class="p-4 hover:pb-10 hover:bg-rain hover:text-sunglow drop-down relative"
+            >
               <a href="#">Resources </a><i class="fa fa-angle-down"></i>
               <ul
                 class="py-5 px-10 absolute top-14 left-0 bg-rain border-b-sunglow border-b-4 drop-down-item text-blue-black"
@@ -190,30 +191,28 @@
               </ul>
             </li>
             <li
-              class="p-4 hover:border-b-4 hover:border-b-sunglow hover:text-sunglow"
+              class="p-4 md:hover:border-b-4 md:hover:border-b-sunglow hover:text-sunglow"
             >
               <a href="#">Help</a>
             </li>
           </ul>
-          <div class="btns flex gap-6">
-              <button
-            class="border border-sunglow px-2 bg-orange uppercase font-bold hover:bg-sunglow ml-2"
-          >
-            <a href="#">Buy Now</a>
-          </button>
-          <button class="mx-5">
-            <i class="fa fa-cart-plus text-3xl text-sunglow"></i>
-          </button>
-          <button
-            class="border border-orange px-2 bg-sunglow uppercase font-bold"
-          >
-            <a href="#">Free Trial</a>
-          </button>
+          <div class="btns flex gap-3">
+            <button
+              class="border border-sunglow px-2 bg-orange uppercase font-bold hover:bg-sunglow ml-2"
+            >
+              <a href="#">Buy Now</a>
+            </button>
+            <button class="mx-5">
+              <i class="fa fa-cart-plus text-3xl text-sunglow"></i>
+            </button>
+            <button
+              class="border border-orange px-2 bg-sunglow uppercase font-bold"
+            >
+              <a href="#">Free Trial</a>
+            </button>
           </div>
         </nav>
       </header>
-      <!-- <hr class="border-rain border-2" />
-      <br /> -->
       <section
         class="bg-rain lg:flex lg:justify-between grid align-center justify-center"
       >
@@ -252,7 +251,7 @@
           We get it - there's no such thing as a slow day in property management
         </h2>
         <div class="flex justify-center items-center">
-          <hr class="border-rain border-2 w-20" />
+          <hr class="border-rain bg-rain border-2 w-20" />
         </div>
         <div class="problem-statement1 flex gap-10 mt-10 lg:px-20 px-10">
           <div>
@@ -261,7 +260,7 @@
               alt="property manager software demo"
             />
           </div>
-          <div class="py-10">
+          <div class="description">
             <h3 class="lg:text-5xl text-3xl font-bold text-blue-black">
               You have 1,000 things to do and your inbox is on fire
             </h3>
@@ -273,7 +272,7 @@
           </div>
         </div>
         <div class="problem-statement2 flex mt-10 lg:px-20 px-10">
-          <div class="py-10">
+          <div class="description2">
             <h3 class="lg:text-5xl text-3xl font-bold text-blue-black">
               Your residents expect more than ever before
             </h3>
@@ -289,14 +288,14 @@
             />
           </div>
         </div>
-        <div class="problem-statement3 flex mt-10 lg:px-20 px-10">
+        <div class="problem-statement3 flex mt-10 lg:px-20 px-10 gap-10 mb-20">
           <div>
             <img
               src="images/animated-gif-grow-your-portfolio-buildium.gif"
               alt="map showing different location"
             />
           </div>
-          <div class="py-10">
+          <div class="description">
             <h3 class="lg:text-5xl text-3xl font-bold text-blue-black">
               You want to grow your portfolio on your terms
             </h3>
@@ -308,10 +307,234 @@
           </div>
         </div>
       </section>
-      <section class="bg-mountain px-36 py-10 text-center">
-        <h2 class="text-6xl"><span class="text-sunglow">Choose Buildium</span> today so you can <span class="text-sunglow">scale</span> your tomorrow.</h2>
-         <button class="px-20 py-5 bg-mist text-white text-3xl mt-10 "><a href="#">Start My Free Trial</a></button>
+      <section class="bg-rain md:px-36 py-16 px-20 text-center">
+        <h2 class="md:text-5xl text-3xl text-white font-bold">
+          <span class="text-sunglow">Choose Buildium</span> today so you can
+          <span class="text-sunglow">scale</span> your tomorrow.
+        </h2>
+        <button
+          class="md:px-20 px-5 py-5 bg-blue-black text-white text-2xl md:text-3xl mt-10 font-bold hover:opacity-80"
+        >
+          <a href="#">Start My Free Trial</a>
+        </button>
+      </section>
+      <section class="portfolio py-10">
+        <h3 class="lg:text-4xl text-3xl font-bold text-blue-black text-center">
+          All portfolios. All unit counts.
+        </h3>
+        <p
+          class="leading-5 md:text-xl text-lg mt-6 text-blue-black text-center portfolio-paragraph py-5"
+        >
+          Whether you manage five doors or five thousand, you need a simple,
+          unified platform that powers you to be your best
+        </p>
+        <div class="ps-menu">
+          <div class="feature-menu">
+            <ul class="text-lg font-bold">
+              <li><span class="border pl-5">Payment Collection</span</li>
+              <li class="py-6"><span>Accounting</span</li>
+              <li><span>Maintenance Management</span</li>
+              <li><span>Vendor Management</span</li>
+              <li><span>Communications</span</li>
+              <li><span>Resident Center</span</li>
+            </ul>
+            <div class="all-features">
+              <a href="http://" target="_blank" rel="noopener noreferrer">All Features</a>
+            </div>
+          </div>
+          <div class="feature-description">
+            <div class="payment flex">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div>
+            </div>
+            <div class="accounting">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <!-- <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div> -->
+            </div>
+            <div class="maintenace">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <!-- <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div> -->
+            </div>
+            <div class="vendor">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <!-- <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div> -->
+            </div>
+            <div class="communication">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div>
+            </div>
+            <div class="communication">
+              <div class="product-descript">
+                <p>Credit card and ACH payments</p>
+                <p>Get paid faster with online payments. With ePay, powered by Buildium, you can automate collections and payments to vendors, owners and residents.</p>
+                <p>&nbsp;</p>
+                <p>Retail Cash Payment</p>
+                <p>We’ve partnered with PayNearMe to bring you an easy way to make, receive and process cash payments.</p>
+              </div>
+              <!-- <div>
+                <img src="images/dashboard-desktop-device-screenshot-hero.png" alt="Dashboard">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-rain md:px-36 py-16 px-20 text-center">
+        <h2 class="md:text-5xl text-3xl text-white font-bold">
+          Start your <span class="text-sunglow">free trial</span> today
+        </h2>
+        <p class="text-white leading-8 text-lg py-5">
+          With a 14-day free trial and customized customer onboarding, you have
+          everything to gain.
+        </p>
+        <form action="" class="grid lg:grid-cols-4 grid-cols-2 gap-5">
+          <input
+            type="text"
+            id="first-name"
+            placeholder="First name"
+            class="p-4"
+          />
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Last name"
+            class="p-4"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+            class="p-4"
+          />
+          <input
+            type="button"
+            value="Start My Free Trial"
+            class="p-4 bg-sunglow text-white uppercase font-bold"
+          />
+        </form>
       </section>
     </main>
+    <footer class="pt-20">
+      <section class="flex gap-10 footer">
+        <div class="item-1">
+          <img
+            src="images/buildium-realpage-company-logo1.png"
+            alt="company logo"
+          />
+          <p class="text-blue-black font-bold text-lg py-8">
+            <a href="#"
+              >Take A Tour <i class="fa fa-long-arrow-right text-2xl"></i
+            ></a>
+          </p>
+          <p class="text-blue-black font-bold text-lg pb-5">
+            <a href="#"
+              >Start my Free Trial
+              <i class="fa fa-long-arrow-right text-2xl"></i
+            ></a>
+          </p>
+          <div class="border-t border-blue-black newsletter">
+            <p class="w-32 text-blue-black">
+              Join our blog newsletter to stay up to date on property management
+              industry insights.
+            </p>
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="Email Address*"
+                class="w-full p-4 bg-transparent text-white font-bold border-sunglow border"
+              />
+              <i
+                class="fa fa-telegram absolute text-2xl text-sunglow right-5 bg-transparent"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="dropdown-lists">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Resources</li>
+            <li>Buildium Academy</li>
+            <li>Knowledge Base</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="dropdown-lists">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Integrations</li>
+            <li>Affiliate Program</li>
+            <li>Customer Referral Program</li>
+            <li>Partner with Buildium</li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="text-blue-black text-lg underline">Contact Us</h6>
+          <p class="text-lg">Sales: 877-396-7876</p>
+          <address>
+            <p class="font-bold text-xl">Global HeadQuarter</p>
+            <p class="text-lg">
+              (617) 829-9570 3 Center Plaza, Suite 400 Boston, MA 02108
+            </p>
+          </address>
+        </div>
+      </section>
+      <section
+        class="flex justify-between p-5 text-white bg-blue-black text-sm mt-10"
+      >
+        <p>
+          ©2022 Buildium, A RealPage Company®. All rights reserved. | Privacy
+          Policy | Security Policy | Subscriber Center | <br />
+          Do Not Sell My Personal Information
+        </p>
+        <div class="text-white text-2xl ml-10 sm-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
