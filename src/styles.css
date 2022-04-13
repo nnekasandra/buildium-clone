@@ -49,17 +49,22 @@
 .portfolio-paragraph {
   margin: 0 auto;
 }
-.show-item{
+.show-item {
   display: none;
 }
 .sm-icons {
   display: flex;
-  gap: 10px;
-  margin-left: 130px;
+  gap: 15px;
 }
 .fa-telegram {
   right: 20px;
   top: 10px;
+}
+.form{
+  width: 100%;
+}
+.form input{
+  width: 25%;
 }
 h6 {
   color: #021c1e;
@@ -71,16 +76,15 @@ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .newsletter p,
-.newsletter input{
+.newsletter input {
   width: 100%;
 }
 .footer {
   margin-left: 50px;
   margin-right: 50px;
 }
-.problem-statement2 div:nth-child(2) img{
+.problem-statement2 div:nth-child(2) img {
   width: 100%;
 }
 @media (min-width: 1001px) {
@@ -94,6 +98,10 @@ h6 {
   .newsletter p,
   .newsletter input {
     width: 350px;
+  }
+  .tabs {
+    border-left: 5px solid #dbdbdc;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1000px) {
@@ -123,6 +131,18 @@ h6 {
   #check:checked ~ nav ul {
     transform: translateX(0);
   }
+  .ps-menu {
+    grid-template-columns: 1fr;
+  }
+  .menu-tabs {
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    overflow-x: hidden;
+  }
+  .tabs  {
+    border-bottom: 5px solid #dbdbdc;
+  }
 }
 @media (max-width: 899px) {
   .footer {
@@ -132,27 +152,29 @@ h6 {
   .item-1 {
     grid-column: span 2;
   }
+  .contact{
+    grid-column: span 2;
+  }
   .problem-statement1,
   .problem-statement2,
   .problem-statement3 {
     flex-direction: column-reverse;
   }
 }
-@media (min-width: 900px){
-  .description{
-     padding-top: 70px;
+@media (min-width: 900px) {
+  .description {
+    padding-top: 70px;
   }
-  .problem-statements{
+  .problem-statements {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 60px;
   }
-  .description2{
+  .description2 {
     padding-top: 200px;
   }
 }
 @media (max-width: 700px) {
-  
   .btns {
     display: none;
   }
