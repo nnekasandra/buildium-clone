@@ -534,16 +534,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .w-20 {
@@ -570,16 +570,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-around {
@@ -636,9 +636,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(44 120 115 / var(--tw-border-opacity));
 }
 
-.border-blue-black {
+.border-border {
   --tw-border-opacity: 1;
-  border-color: rgb(2 28 30 / var(--tw-border-opacity));
+  border-color: rgb(219 219 220 / var(--tw-border-opacity));
 }
 
 .border-b-sunglow {
@@ -674,12 +674,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.p-20 {
-  padding: 5rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-7 {
@@ -717,14 +721,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .px-5 {
@@ -735,6 +734,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-8 {
@@ -776,9 +780,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xl {
@@ -786,14 +790,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -837,6 +841,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .drop-down-item {
   display: none;
 }
@@ -844,6 +852,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .drop-down:hover .drop-down-item {
   display: block;
   min-width: 300px;
+}
+
+header {
+  z-index: 1000;
 }
 
 .dropdown-menu h5 {
@@ -899,7 +911,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .sm-icons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+}
+
+.button {
+  width: 100%;
 }
 
 .fa-telegram {
@@ -907,12 +923,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 10px;
 }
 
-.form{
+.form input {
   width: 100%;
-}
-
-.form input{
-  width: 25%;
 }
 
 h6 {
@@ -932,13 +944,85 @@ h6 {
   width: 100%;
 }
 
-.footer {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .problem-statement2 div:nth-child(2) img {
   width: 100%;
+}
+
+/*Support Page*/
+
+.support-main {
+  background-image: url("/dist/images/support-cover-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+}
+
+.support-content {
+  padding-left: 8em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.support-center {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.support-center > p {
+  font-size: 2.5em;
+}
+
+.support-center > div {
+  padding-top: 4em;
+}
+
+/* Buy Now */
+
+.buy-now {
+  margin: auto 20em;
+}
+
+#checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+#checkbox:checked {
+  background-color: #021c1e;
+}
+
+/* Features */
+
+.feature-bg {
+  background-image: url("/dist/images/features-bg.jpg");
+}
+
+.play {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.component-features {
+  padding-left: 8em;
+  padding-right: 8em;
+  /* position: fixed; */
+}
+
+.component-features ul {
+  gap: 6em;
+}
+
+#paragraph {
+  max-width: 500px;
+}
+
+#features > p {
+  padding-left: 8em;
+}
+
+.sub-features{
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 1001px) {
@@ -947,8 +1031,8 @@ h6 {
   }
 
   .footer {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .newsletter p,
@@ -957,8 +1041,11 @@ h6 {
   }
 
   .tabs {
-    border-left: 5px solid #dbdbdc;
     padding-left: 30px;
+  }
+
+  .form {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -995,19 +1082,13 @@ h6 {
     transform: translateX(0);
   }
 
-  .ps-menu {
-    grid-template-columns: 1fr;
+  .tabs {
+    border-left: 5px solid #dbdbdc;
   }
 
-  .menu-tabs {
-    display: flex;
-    gap: 20px;
-    width: 300px;
-    overflow-x: hidden;
-  }
-
-  .tabs  {
-    border-bottom: 5px solid #dbdbdc;
+  .footer {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -1021,14 +1102,56 @@ h6 {
     grid-column: span 2;
   }
 
-  .contact{
+  .contact {
     grid-column: span 2;
   }
 
   .problem-statement1,
-  .problem-statement2,
   .problem-statement3 {
     flex-direction: column-reverse;
+  }
+
+  .problem-statement2 {
+    flex-direction: column;
+  }
+
+  .alignment {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /*Support*/
+
+  .support-content {
+    padding-left: 4em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+
+  .support-center > p {
+    font-size: 1.8em;
+  }
+
+  .support-center > div {
+    flex-direction: column;
+  }
+
+  /* Buy Now */
+
+  .buy-now {
+    margin: auto 10em;
+  }
+
+  /* Features  */
+
+  .component-features {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  #features p {
+    padding-left: 4em;
   }
 }
 
@@ -1046,11 +1169,49 @@ h6 {
   .description2 {
     padding-top: 200px;
   }
+
+  .button {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Support*/
+
+  .support-center {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
 
 @media (max-width: 700px) {
   .btns {
     display: none;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  /*Support page*/
+
+  .support-center {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  /* Buy Now */
+
+  .buy-now {
+    margin: auto 5em;
+  }
+
+  .names {
+    flex-direction: column;
   }
 }
 
@@ -1078,6 +1239,14 @@ h6 {
 }
 
 @media (min-width: 900px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1088,8 +1257,27 @@ h6 {
     padding-right: 9rem;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .md\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-5xl {
@@ -1097,14 +1285,18 @@ h6 {
     line-height: 1;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
   }
 
   .md\:hover\:border-b-4:hover {
@@ -1120,10 +1312,6 @@ h6 {
 @media (min-width: 1200px) {
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:justify-between {

@@ -4,12 +4,18 @@
 
 @tailwind utilities;
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 .drop-down-item {
   display: none;
 }
 .drop-down:hover .drop-down-item {
   display: block;
   min-width: 300px;
+}
+header {
+  z-index: 1000;
 }
 .dropdown-menu h5 {
   font-weight: bold;
@@ -54,17 +60,17 @@
 }
 .sm-icons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+}
+.button {
+  width: 100%;
 }
 .fa-telegram {
   right: 20px;
   top: 10px;
 }
-.form{
+.form input {
   width: 100%;
-}
-.form input{
-  width: 25%;
 }
 h6 {
   color: #021c1e;
@@ -80,28 +86,88 @@ h6 {
 .newsletter input {
   width: 100%;
 }
-.footer {
-  margin-left: 50px;
-  margin-right: 50px;
-}
 .problem-statement2 div:nth-child(2) img {
   width: 100%;
+}
+
+/*Support Page*/
+
+.support-main {
+  background-image: url("/dist/images/support-cover-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+}
+.support-content {
+  padding-left: 8em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.support-center {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+.support-center > p {
+  font-size: 2.5em;
+}
+.support-center > div {
+  padding-top: 4em;
+}
+
+/* Buy Now */
+.buy-now {
+  margin: auto 20em;
+}
+#checkbox {
+  height: 20px;
+  width: 20px;
+}
+#checkbox:checked {
+  background-color: #021c1e;
+}
+/* Features */
+.feature-bg {
+  background-image: url("/dist/images/features-bg.jpg");
+}
+.play {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+.component-features {
+  padding-left: 8em;
+  padding-right: 8em;
+  /* position: fixed; */
+}
+.component-features ul {
+  gap: 6em;
+}
+#paragraph {
+  max-width: 500px;
+}
+#features > p {
+  padding-left: 8em;
+}
+.sub-features{
+  grid-template-columns: repeat(2, 1fr);
 }
 @media (min-width: 1001px) {
   .portfolio-paragraph {
     width: 550px;
   }
   .footer {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   .newsletter p,
   .newsletter input {
     width: 350px;
   }
   .tabs {
-    border-left: 5px solid #dbdbdc;
     padding-left: 30px;
+  }
+  .form {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 1000px) {
@@ -131,17 +197,12 @@ h6 {
   #check:checked ~ nav ul {
     transform: translateX(0);
   }
-  .ps-menu {
-    grid-template-columns: 1fr;
+  .tabs {
+    border-left: 5px solid #dbdbdc;
   }
-  .menu-tabs {
-    display: flex;
-    gap: 20px;
-    width: 300px;
-    overflow-x: hidden;
-  }
-  .tabs  {
-    border-bottom: 5px solid #dbdbdc;
+  .footer {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 @media (max-width: 899px) {
@@ -152,13 +213,44 @@ h6 {
   .item-1 {
     grid-column: span 2;
   }
-  .contact{
+  .contact {
     grid-column: span 2;
   }
   .problem-statement1,
-  .problem-statement2,
   .problem-statement3 {
     flex-direction: column-reverse;
+  }
+  .problem-statement2 {
+    flex-direction: column;
+  }
+  .alignment {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /*Support*/
+  .support-content {
+    padding-left: 4em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+  .support-center > p {
+    font-size: 1.8em;
+  }
+  .support-center > div {
+    flex-direction: column;
+  }
+  /* Buy Now */
+  .buy-now {
+    margin: auto 10em;
+  }
+  /* Features  */
+  .component-features {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  #features p {
+    padding-left: 4em;
   }
 }
 @media (min-width: 900px) {
@@ -173,9 +265,38 @@ h6 {
   .description2 {
     padding-top: 200px;
   }
+  .button {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Support*/
+  .support-center {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
 @media (max-width: 700px) {
   .btns {
     display: none;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  /*Support page*/
+  .support-center {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  /* Buy Now */
+  .buy-now {
+    margin: auto 5em;
+  }
+  .names {
+    flex-direction: column;
   }
 }
