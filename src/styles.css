@@ -127,29 +127,57 @@ h6 {
 }
 /* Features */
 .feature-bg {
-  background-image: url("/dist/images/features-bg.jpg");
+  background-image: url("/dist/images/feature-bg-test.jpg");
 }
 .play {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
-  padding: 5px;
+  padding: 6px;
 }
 .component-features {
   padding-left: 8em;
   padding-right: 8em;
-  /* position: fixed; */
+  background-color: #6fb98f;
 }
 .component-features ul {
   gap: 6em;
 }
+.component-features ul li a:hover {
+  font-weight: bold;
+  color: #021c1e;
+}
 #paragraph {
   max-width: 500px;
 }
-#features > p {
+.sub-features {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+}
+.sub-features-desc {
+  max-width: 300px;
+}
+.feature-title {
+  border-bottom: 5px solid #6fb98f;
+  font-size: 1em;
+  padding-bottom: 5px;
+  color: #6fb98f;
+}
+.features {
   padding-left: 8em;
 }
-.sub-features{
-  grid-template-columns: repeat(2, 1fr);
+.grid-align {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+/* Blog */
+.blog-bg {
+  background-image: url("/dist/images/blog-bg-3.jpg");
+  /* opacity: 50%; */
+}
+.blog-section {
+  padding-left: 8em;
+  padding-right: 8em;
 }
 @media (min-width: 1001px) {
   .portfolio-paragraph {
@@ -204,6 +232,14 @@ h6 {
     margin-left: 30px;
     margin-right: 30px;
   }
+  /* Features */
+  .grid-align {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sub-features {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 899px) {
   .footer {
@@ -249,8 +285,25 @@ h6 {
     padding-left: 4em;
     padding-right: 4em;
   }
-  #features p {
+  .component-features ul {
+    gap: 2em;
+  }
+  .grid-align {
     padding-left: 4em;
+    padding-right: 4em;
+  }
+  .feature-title {
+    color: #fff;
+    border-color: #fff;
+  }
+  .main-features {
+    background-color: #6fb98f;
+    height: 300px;
+  }
+  /* Blog */
+  .blog-section {
+    padding-left: 4em;
+    padding-right: 4em;
   }
 }
 @media (min-width: 900px) {
@@ -297,6 +350,16 @@ h6 {
     margin: auto 5em;
   }
   .names {
+    flex-direction: column;
+  }
+  /* Features */
+  .grid-align {
+    grid-template-columns: 1fr;
+  }
+  .features {
+    padding-left: 8em;
+  }
+  .component-features ul {
     flex-direction: column;
   }
 }
