@@ -86,7 +86,7 @@ h6 {
 .newsletter input {
   width: 100%;
 }
-.problem-statement2 div:nth-child(2) img {
+.problem-statement2 div:nth-child(2) img{
   width: 100%;
 }
 
@@ -173,11 +173,41 @@ h6 {
 /* Blog */
 .blog-bg {
   background-image: url("/dist/images/blog-bg-3.jpg");
-  /* opacity: 50%; */
 }
 .blog-section {
   padding-left: 8em;
   padding-right: 8em;
+}
+.blog-post {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: margin 0.5s;
+}
+.blog-post:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+.blog-title {
+  color: #2c7873;
+}
+.blog-tag {
+  text-align: right;
+}
+.trial button{
+  border-radius: 10px;
+  color: #2c7873;
+}
+/* Student */
+.student-bg{
+  background-image: url('/dist/images/housing.jpg');
+}
+.support-content-student{
+    padding-left: 8em;
+    padding-top: 15em;
+    padding-bottom: 3em;
+}
+.student-housing-website div:nth-child(2),
+.student-housing-website div:nth-child(4){
+    background-color: #ccc;
 }
 @media (min-width: 1001px) {
   .portfolio-paragraph {
@@ -305,6 +335,24 @@ h6 {
     padding-left: 4em;
     padding-right: 4em;
   }
+  .blog-posts{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .blog-align {
+    grid-template-columns: 1fr;
+  }
+  .blog-align form {
+    grid-column: span 1;
+  }
+  .filter-btns {
+    justify-content: right;
+  }
+  /* Students */
+  .support-content-student{
+    padding-left: 4em;
+    padding-top: 8em;
+    padding-bottom: 2.5em;
+}
 }
 @media (min-width: 900px) {
   .description {
@@ -360,6 +408,16 @@ h6 {
     padding-left: 8em;
   }
   .component-features ul {
+    flex-direction: column;
+  }
+  /* Blog */
+  .blog-align form {
+    flex-direction: column;
+  }
+  .blog-posts{
+    grid-template-columns: 1fr;
+  }
+  .trial{
     flex-direction: column;
   }
 }
