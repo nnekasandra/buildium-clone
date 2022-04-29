@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buildium - Open API</title>
+  </head>
+  <body>
+    <main>
+      <header class="flex justify-around py-7 sticky top-0 bg-white">
+        <div>
+          <img
+            src="images/buildium-realpage-company-logo1.png"
+            alt="Company Logo"
+          />
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn relative left-20 top-3">
+          <i class="fa fa-bars"></i>
+        </label>
+        <nav class="flex">
+          <ul class="flex gap-6 font-bold text-sm">
+            <li
+              class="p-4 hover:pb-10 hover:bg-rain hover:text-sunglow feature-dropdown relative"
+            >
+              <a href="#">Features </a><i class="fa fa-angle-down"></i>
+              <div
+                class="bg-rain border-b-4 border-b-sunglow py-10 px-28 text-blue-black mega-menu"
+              >
+                <div class="flex gap-20">
+                  <div class="dropdown-menu">
+                    <h5 class="dropdown-title text-sunglow">
+                      <a href="#">Accounting</a>
+                    </h5>
+                    <ul class="dropdown-lists">
+                      <li class="hover:text-sunglow">
+                        <a href="#">Property Accounting</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Company Financials</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Online Payments</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Retail Cash Payments</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">1099 e-Filing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu">
+                    <h5 class="dropdown-title text-sunglow">
+                      <a href="#">Business Operations</a>
+                    </h5>
+                    <ul class="dropdown-lists">
+                      <li class="hover:text-sunglow">
+                        <a href="#">Resident Center</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Document Storage</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Maintenance Request Tracking</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Property Inspections</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Renters Insurance</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">All Property Management</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Open API</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Analytics & Insights</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu">
+                    <h5 class="dropdown-title text-sunglow">
+                      <a href="#">Leasing</a>
+                    </h5>
+                    <ul class="dropdown-lists">
+                      <li class="hover:text-sunglow">
+                        <a href="#">Rental Listings</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Rental Applications</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Showings Coordinator</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Tenant Screening</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Professional Website</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">eSignature</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu">
+                    <h5 class="dropdown-title text-sunglow">
+                      <a href="#">Benefits</a>
+                    </h5>
+                    <ul class="dropdown-lists">
+                      <li class="hover:text-sunglow">
+                        <a href="#">Onboarding</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Customer Care</a>
+                      </li>
+                      <li class="hover:text-sunglow">
+                        <a href="#">Data Security</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text-sunglow font-bold para mr-40">
+                  <a href="#"
+                    >View all Features <i class="fa fa-arrow-right"></i
+                  ></a>
+                </p>
+              </div>
+            </li>
+            <li class="p-4 hover:bg-rain hover:text-sunglow relative drop-down">
+              <a href="#">Portfolio </a><i class="fa fa-angle-down"></i>
+              <ul
+                class="py-5 px-10 absolute top-14 left-0 bg-rain border-b-sunglow border-b-4 drop-down-item text-blue-black"
+              >
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Community Association</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Student Housing</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Affordable Housing</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Residential Property</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="p-4 md:hover:border-b-4 md:hover:border-b-sunglow hover:text-sunglow"
+            >
+              <a href="#">Pricing</a>
+            </li>
+            <li
+              class="p-4 hover:pb-10 hover:bg-rain hover:text-sunglow drop-down relative"
+            >
+              <a href="#">Resources </a><i class="fa fa-angle-down"></i>
+              <ul
+                class="py-5 px-10 absolute top-14 left-0 bg-rain border-b-sunglow border-b-4 drop-down-item text-blue-black"
+              >
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">All Resources</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">2022 Industry Report</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Business Operation</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Residential Property</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Resident Experience</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Property Manager Stories</a>
+                </li>
+                <li class="py-3 hover:text-sunglow">
+                  <a href="#">Industry Research</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="p-4 md:hover:border-b-4 md:hover:border-b-sunglow hover:text-sunglow"
+            >
+              <a href="#">Help</a>
+            </li>
+          </ul>
+          <div class="btns flex gap-3">
+            <button
+              class="border border-sunglow px-2 bg-orange uppercase font-bold hover:bg-sunglow ml-2"
+            >
+              <a href="#">Buy Now</a>
+            </button>
+            <button class="mx-5">
+              <i class="fa fa-cart-plus text-3xl text-sunglow"></i>
+            </button>
+            <button
+              class="border border-orange px-2 bg-sunglow uppercase font-bold"
+            >
+              <a href="#">Free Trial</a>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <section class="support-main text-white api-bg">
+        <div class="support-content-student pt-20">
+          <h1 class="text-4xl lg:text-5xl font-bold">OPEN API</h1>
+          <p class="leading-5 text-lg mt-6" id="paragraph">
+            Free your data to operate more efficiently
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="font-bold text-3xl text-blue-black support-center py-16 text-center">
+          Buildium’s Open API integrates your most critical property, resident
+          and accounting data with your other business applications, to increase
+          access and insight into what matters most.
+        </h2>
+        <div class="problem-statement gap-10 lg:mt-20 support-center">
+          <div>
+            <img
+              src="images/PostmanAPIScreenshot.jpg"
+              alt="PostmanAPIScreenshot"
+            />
+          </div>
+          <div class="">
+            <h3 class="lg:text-4xl text-3xl font-bold text-blue-black">
+              Put Your Data into Action
+            </h3>
+            <p class="leading-8 text-xl mt-6 text-blue-black">
+              Get programmatic access to your company’s data within Buildium and
+              link it to outside tools and systems. Create and update
+              integrations with a variety of applications that specialize in
+              accounting, lead tracking, and more.
+            </p>
+          </div>
+        </div>
+        <div class="problem-statement mt-20 support-center">
+          <div>
+            <h3 class="lg:text-4xl text-3xl font-bold text-blue-black">
+              Create Self-service API keys
+            </h3>
+            <p class="leading-8 text-xl mt-6 text-blue-black">
+              Authorize your team to generate API keys and get the information
+              they need in the format that works best for your business.
+            </p>
+          </div>
+          <div>
+            <img src="images/Asset-48API_Keys.png" alt="Api options and keys" />
+          </div>
+        </div>
+        <div class="developer-portal py-16 support-center">
+          <div>
+            <img
+              src="images/Asset-49API_Developer-Portal.png"
+              alt="Developer Portal"
+            />
+          </div>
+          <div>
+            <h3 class="font-bold text-3xl text-blue-black text-center">Get started with Developers Portal</h3>
+            <p class="leading-5 text-xl py-8">
+              Buildium’s simple-to-use developer portal walks you through every
+              step including how to create API Keys, make your first API
+              request, and use the information you get back.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-rain md:px-32 py-16 px-14 text-center">
+        <h2 class="md:text-5xl text-3xl text-white font-bold">
+          Start your <span class="text-sunglow">free trial</span> today
+        </h2>
+        <p class="text-white leading-8 text-lg py-5">
+          With a 14-day free trial and customized customer onboarding, you have
+          everything to gain.
+        </p>
+        <form action="" class="grid gap-5 form">
+          <input
+            type="text"
+            id="first-name"
+            placeholder="First name"
+            class="p-4"
+          />
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Last name"
+            class="p-4"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+            class="p-4"
+          />
+          <input
+            type="button"
+            value="Start My Free Trial"
+            class="p-4 bg-sunglow text-white uppercase font-bold"
+          />
+        </form>
+      </section>
+    </main>
+    <footer class="pt-20">
+      <section class="flex gap-10 footer">
+        <div class="item-1">
+          <img
+            src="images/buildium-realpage-company-logo1.png"
+            alt="company logo"
+          />
+          <p class="text-blue-black font-bold text-lg py-8">
+            <a href="#"
+              >Take A Tour <i class="fa fa-long-arrow-right text-2xl"></i
+            ></a>
+          </p>
+          <p class="text-blue-black font-bold text-lg pb-5">
+            <a href="#"
+              >Start my Free Trial
+              <i class="fa fa-long-arrow-right text-2xl"></i
+            ></a>
+          </p>
+          <div class="border-t border-border newsletter">
+            <p class="w-32 text-blue-black">
+              Join our blog newsletter to stay up to date on property management
+              industry insights.
+            </p>
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="Email Address*"
+                class="w-full p-4 bg-transparent text-white font-bold border-sunglow border"
+              />
+              <i
+                class="fa fa-telegram absolute text-2xl text-sunglow right-5 bg-transparent"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="dropdown-lists">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Resources</li>
+            <li>Buildium Academy</li>
+            <li>Knowledge Base</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="dropdown-lists">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Integrations</li>
+            <li>Affiliate Program</li>
+            <li>Customer Referral Program</li>
+            <li>Partner with Buildium</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h6 class="text-blue-black text-lg underline">Contact Us</h6>
+          <p class="text-lg">Sales: 877-396-7876</p>
+          <address>
+            <p class="font-bold text-xl">Global HeadQuarter</p>
+            <p class="text-lg">
+              (617) 829-9570 3 Center Plaza, Suite 400 Boston, MA 02108
+            </p>
+          </address>
+        </div>
+      </section>
+      <section
+        class="flex justify-between p-8 text-white bg-blue-black text-sm mt-10"
+      >
+        <div class="col-span-2">
+          <p>
+            ©2022 Buildium, A RealPage Company®. All rights reserved. | Privacy
+            Policy | Security Policy | Subscriber Center | <br />
+            Do Not Sell My Personal Information
+          </p>
+        </div>
+        <div class="text-white text-2xl sm-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
