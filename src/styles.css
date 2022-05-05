@@ -18,7 +18,7 @@ header {
   z-index: 1000;
 }
 nav ul li div,
-.drop-down-item{
+.drop-down-item {
   color: #fff;
 }
 .dropdown-menu h5 {
@@ -135,8 +135,7 @@ h6 {
 }
 /* Features */
 .feature-bg {
-  background-image: url("/dist/images/feature-bg-test.jpg");
-  filter: brightness(50%);
+  background-image: url("/dist/images/help-center.jpg");
 }
 .play {
   border: 2px solid #fff;
@@ -155,7 +154,8 @@ h6 {
   font-weight: bold;
   color: #021c1e;
 }
-#paragraph {
+#paragraph,
+.blog-author p {
   max-width: 500px;
 }
 .sub-features {
@@ -207,7 +207,7 @@ h6 {
 }
 /* Student */
 .student-bg {
-  background-image: url("/dist/images/stdt-home.jpg");
+  background-image: url("/dist/images/student-cover.jpg");
 }
 .support-content-student {
   padding-left: 8em;
@@ -340,20 +340,20 @@ ol hr {
   background-color: #fff;
   padding: 15px;
 }
-.programs{
+.programs {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.programs h3{
+.programs h3 {
   color: #2c7873;
 }
-.programs p:nth-child(1){
+.programs p:nth-child(1) {
   max-width: 400px;
 }
 
 /* Free Trial */
-.icon-bg{
+.icon-bg {
   height: 20px;
   height: 20px;
   background-color: #021c1e;
@@ -364,11 +364,50 @@ ol hr {
   justify-content: center;
   /* padding: 5px; */
 }
-.border-span{
+.border-span {
   height: 2px;
   width: 50px;
   border-radius: 5px;
   background-color: #ccc;
+}
+
+/* Blog Read Page  */
+.blog-page {
+  background-image: url("/dist/images/open-api-bg.jpg");
+}
+.share-btns {
+  border-bottom: 1px solid #2c7873;
+}
+.share-btns p {
+  color: #021c1e;
+  font-size: 16px;
+}
+.big{
+  font-size: 4em;
+  color: #2c7873;
+}
+.share-links {
+  cursor: pointer;
+  transition: all .5s;
+}
+.share-links i:hover{
+  color: #2c7873;
+}
+.article {
+  padding-left: 15em;
+  padding-right: 15em;
+}
+.italicize {
+  font-style: italic;
+}
+.article p {
+  font-size: 18px;
+}
+figure img{
+  border-radius: 50%;
+}
+.read-more{
+  color: #2c7873;
 }
 @media (min-width: 1001px) {
   .portfolio-paragraph {
@@ -529,8 +568,20 @@ ol hr {
     padding-left: 3em;
     padding-right: 3em;
   }
-  .partner-form{
+  .partner-form {
     grid-template-columns: 1fr;
+  }
+
+  /* Blog Read Page */
+  .article {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .marketing-blog {
+    grid-template-columns: 1fr;
+  }
+  .blog-author{
+    flex-direction: column;
   }
 }
 @media (min-width: 900px) {
@@ -608,7 +659,7 @@ ol hr {
     flex-direction: column;
   }
   /* Partner */
-  .programs{
+  .programs {
     grid-template-columns: 1fr;
   }
 }
