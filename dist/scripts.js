@@ -55,19 +55,31 @@ const tabContents = {
 let tabs = document.getElementsByClassName("tabs");
 let title_1 = document.getElementById("title-1");
 let title_2 = document.getElementById("title-2");
-let img = document.getElementById('img')
+let img = document.getElementById("img");
 let description_1 = document.getElementById("description-1");
 let description_2 = document.getElementById("description-2");
 for (let tab of tabs) {
-    tab.addEventListener('click', function(e){
-        let tabId = e.target.getAttribute("id");
-        let content = tabContents[tabId]; // get the content object based on tab element's id value
-        title_1.innerHTML = content['title1'];
-        title_2.innerHTML = content['title2'];
-        description_1.innerHTML = content.description1;
-        description_2.innerHTML = content.description2;
-        img.src = content.img;
-        tab.style.borderLeftColor = "#2C7873";;
-        tab.style.color = "#2C7873";
-    });
+  tab.addEventListener("click", function (e) {
+    let tabId = e.target.getAttribute("id");
+    let content = tabContents[tabId]; // get the content object based on tab element's id value
+    title_1.innerHTML = content["title1"];
+    title_2.innerHTML = content["title2"];
+    description_1.innerHTML = content.description1;
+    description_2.innerHTML = content.description2;
+    img.src = content.img;
+    // tab.style.borderLeftColor = "#2C7873";;
+    // tab.style.color = "#2C7873";
+    // if (tab.style.color == "#2c7873") {
+    //   tab.style.color = "";
+    // }else{
+    //   tab.style.color = "#2C7873";
+    // }
+  });
+}
+for(let tab of tabs){
+  tab.addEventListener('click', changeColor());
+  function changeColor() {
+    let colors = (tab.style.color = "#2C7873");
+    tab.style.color = colors ? "#2C7873" : "";
+  }
 }
