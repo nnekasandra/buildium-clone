@@ -79,6 +79,10 @@ nav ul li div,
 .tabs {
   border-left: 5px solid #dbdbdc;
 }
+.tabs-color{
+  color: #2c7873;
+  border-left-color: #2c7873;
+}
 h6 {
   color: #021c1e;
   font-size: 50px;
@@ -632,6 +636,12 @@ figure img {
   }
   .form {
     grid-template-columns: 1fr;
+  }
+  .feature-menu-tabs{
+    display: none;
+  }
+  #main-description{
+    display: block;
   }
   /*Support page*/
   .support-center {

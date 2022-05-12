@@ -67,19 +67,13 @@ for (let tab of tabs) {
     description_1.innerHTML = content.description1;
     description_2.innerHTML = content.description2;
     img.src = content.img;
-    // tab.style.borderLeftColor = "#2C7873";;
-    // tab.style.color = "#2C7873";
-    // if (tab.style.color == "#2c7873") {
-    //   tab.style.color = "";
-    // }else{
-    //   tab.style.color = "#2C7873";
-    // }
   });
 }
-for(let tab of tabs){
-  tab.addEventListener('click', changeColor());
-  function changeColor() {
-    let colors = (tab.style.color = "#2C7873");
-    tab.style.color = colors ? "#2C7873" : "";
-  }
+for (let tab of tabs) {
+  tab.addEventListener('click', function(){
+    for(t of tabs){
+      t.classList.remove("tabs-color");
+    }
+    tab.classList.add("tabs-color");
+  });
 }
