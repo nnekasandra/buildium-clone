@@ -961,10 +961,9 @@ h6 {
 /*Support Page*/
 
 .support-main {
-  background-image: url("/dist/images/learn.jpg");
+  background-image: url("../dist/images/support-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 90%;
 }
 
 .support-content {
@@ -1010,7 +1009,7 @@ h6 {
 /* Features */
 
 .feature-bg {
-  background-image: url("/dist/images/help-center.jpg");
+  background-image: url("../dist/images/help-center.jpg");
 }
 
 .play {
@@ -1067,7 +1066,7 @@ h6 {
 /* Blog */
 
 .blog-bg {
-  background-image: url("/dist/images/blog-bg-3.jpg");
+  background-image: url("../dist/images/blog-bg-3.jpg");
 }
 
 .blog-section {
@@ -1101,7 +1100,7 @@ h6 {
 /* Student */
 
 .student-bg {
-  background-image: url("/dist/images/student-cover.jpg");
+  background-image: url("../dist/images/student-cover.jpg");
 }
 
 .support-content-student {
@@ -1114,7 +1113,7 @@ h6 {
 /* Open API */
 
 .api-bg {
-  background-image: url(/dist/images/open-api-bg.jpg);
+  background-image: url('../dist/images/open-api-bg.jpg');
 }
 
 .problem-statement {
@@ -1202,7 +1201,7 @@ ol hr {
 /* Partner */
 
 .partner-bg {
-  background-image: url(/dist/images/partner.jpg);
+  background-image: url('../dist/images/partner.jpg');
 }
 
 .partner {
@@ -1284,7 +1283,6 @@ ol hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 5px; */
 }
 
 .border-span {
@@ -1297,7 +1295,7 @@ ol hr {
 /* Blog Read Page  */
 
 .blog-page {
-  background-image: url("/dist/images/open-api-bg.jpg");
+  background-image: url("../dist/images/open-api-bg.jpg");
 }
 
 .share-btns {
